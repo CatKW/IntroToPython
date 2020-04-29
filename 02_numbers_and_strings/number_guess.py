@@ -1,5 +1,5 @@
 x = 20
-number = input('Type your number, then press enter: ')
+number = input('Type your number, then press enter: ').strip()
 if float(number) > x:
     print ('Your number is greater than mine.')
 elif float(number) < x:
