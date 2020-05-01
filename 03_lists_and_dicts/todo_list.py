@@ -104,16 +104,18 @@ def show_todo(todo: TodoAndCompleted) -> None:
     _todo = todo.copy()
 
 
-_todo = {
-    'groceries': '1', 
-    'cooking': '2', 
-    'cleaning': '3'
-}
-keys = _todo.keys()
-show_todo = _todo
- 
- for keys, number in enumerate(show_todo):
-     print(number, 'this is a task', keys)
+    _todo = {
+        'groceries': '1', 
+        'cooking': '2', 
+        'cleaning': '3'
+    }
+    keys = _todo.keys()
+    show_todo = (list(_todo.copy()))
+
+
+    
+    for keys, number in enumerate(show_todo):
+        print(number, 'this is a task', keys)
      
     return None
 
@@ -135,7 +137,7 @@ def add_todo_item(todo: TodoAndCompleted, task: str) -> TodoAndCompleted:
     """
     _todo = todo.copy()
 
-    # Your code here...
+    show_todo.append()
     
     return _todo
 
