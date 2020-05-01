@@ -137,7 +137,7 @@ def add_todo_item(todo: TodoAndCompleted, task: str) -> TodoAndCompleted:
     """
     _todo = todo.copy()
 
-    show_todo.append()
+    show_todo.append('')
     
     return _todo
 
