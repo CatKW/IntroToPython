@@ -1,5 +1,13 @@
+x = 20
+number = input('Type your number, then press enter: ').strip()
+if float(number) > x:
+    print ('Your number is greater than mine.')
+elif float(number) < x:
+    print ('Your number is less than mine.')
+else:
+    print('Your number equals my number!')
+
 # Constants go in screaming snake case.
-HIDDEN_NUMBER = 42
 
 # Raw user input
 guess = input('Type a number and press Enter: ')
